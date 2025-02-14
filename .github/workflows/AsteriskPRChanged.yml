@@ -44,6 +44,13 @@ env:
 jobs:
   PRChanged2:
     name: "run-check"
+    permissions:
+      actions: read
+      checks: read
+      contents: read
+      issues: read
+      pull-requests: read
+      statuses: read
     uses: ./.github/workflows/AsteriskPRChanged2.yml
 
   Cleanup:
